@@ -1,0 +1,70 @@
+
+html {
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-weight: 900;
+    font-size: 20px;
+    color: var(--black);
+    text-shadow: 0 2px 0 rgba(0, 0, 0, 0.07);
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+p {
+    font-size: 50px;
+    border-bottom: 10px solid var(--yellow);
+    color: var(--black);
+  }
+
+  body {
+      background: green linear-gradient(110deg, #f93d66, #6d47d9);
+      /* background-size: 340px, auto; */
+      min-height: calc(100vh - 100px);
+      margin: 50px;
+      background-position: fixed;
+      letter-spacing: -1px;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+      margin: 0 0 5px 0;
+  }
+
+  .wrapper {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+     /*  grid-template-columns: 1fr 1fr 1fr; */
+/*       grid-column-gap: 1em;
+      grid-row-gap: 1em; */
+      grid-gap: 1em;
+    /*   grid-auto-rows: 100px; */
+    grid-auto-rows: minmax(100px, auto);
+  }
+
+  .wrapper > div {
+    background: #eee; 
+    padding: 1em;
+ }
+
+ .wrapper > div:nth-child(odd) {
+     background: #ddd;
+ }
+
+ .nested {
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     grid-auto-rows: 40px;
+     grid-gap: .51em;
+
+ }
+ .nested > div {
+     border: #333 1px solid;
+     padding: .1em;
+ }
